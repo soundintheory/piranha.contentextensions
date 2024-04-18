@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+	  <Version>2.0.0</Version>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <RootNamespace>SoundInTheory.Piranha.ContentExtensions.Singletons</RootNamespace>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.0" />
+    <PackageReference Include="Piranha" Version="11.0.0" />
+    <PackageReference Include="Piranha.AspNetCore" Version="11.0.0" />
+    <PackageReference Include="Piranha.AttributeBuilder" Version="11.0.0" />
+    <PackageReference Include="Piranha.Data.EF" Version="11.0.0" />
+    <PackageReference Include="Piranha.Manager" Version="11.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="assets/**" />
+    <None Include="README.md" Pack="true" PackagePath="" />
+    <None Include="soundintheory.png" Pack="true" Visible="false" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="assets\" />
+  </ItemGroup>
+</Project>

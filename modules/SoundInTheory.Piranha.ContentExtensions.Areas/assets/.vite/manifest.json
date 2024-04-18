@@ -1,0 +1,13 @@
+{
+  "resources/js/permissions.js": {
+    "file": "js\\permissions.js",
+    "name": "js\\permissions",
+    "src": "resources/js/permissions.js",
+    "isEntry": true
+  },
+  "resources/scss/list.scss": {
+    "file": "css/list.css",
+    "src": "resources/scss/list.scss",
+    "isEntry": true
+  }
+}

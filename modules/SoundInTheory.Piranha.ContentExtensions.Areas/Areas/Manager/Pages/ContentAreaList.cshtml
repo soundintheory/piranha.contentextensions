@@ -1,0 +1,52 @@
+﻿@page "~/manager/content/ContentAreas"
+@using SoundInTheory.Piranha.ContentExtensions
+@model SoundInTheory.Piranha.ContentExtensions.Areas.Areas.Manager.Pages.ContentAreaListModel
+@{
+    var version = Piranha.Utils.GetAssemblyVersionHash(typeof(SoundInTheory.Piranha.ContentExtensions.ContentAreasModule).Assembly);
+}
+
+@section script
+{
+    <script src="@Url.Content(Piranha.Manager.Editor.EditorScripts.MainScriptUrl)"></script>
+    <script src="@Url.Content(Piranha.Manager.Editor.EditorScripts.EditorScriptUrl)"></script>
+}
+
+@section partials
+{
+
+}
+
+<link rel="stylesheet" href="/manager/contentextensions/areas/assets/css/list.css" />
+
+<div class="content-areas">
+    <div class="top">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Content Areas</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <table class="table table-borderless">
+            <tbody>
+                @foreach (var areaType in ContentAreasModule.Instance.Types.GetAll())
+                {
+                    <tr>
+                        <td class="icon">
+                            <i class="@areaType.Icon"></i>
+                        </td>
+                        <td class="block-link">
+                            <a href="/manager/areas/edit/@areaType.TypeId">
+                                <h5 class="title">@areaType.Title</h5>
+                                @if (!string.IsNullOrEmpty(areaType.Description))
+                                {
+                                    <span class="description">@areaType.Description</span>
+                                }
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modules", "modules", "{1A708DF9-28E0-4574-A893-B0198976C316}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoundInTheory.Piranha.ContentExtensions.Areas", "modules\SoundInTheory.Piranha.ContentExtensions.Areas\SoundInTheory.Piranha.ContentExtensions.Areas.csproj", "{2E9C8352-5336-4B12-88E1-6DA411965531}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoundInTheory.Piranha.ContentExtensions.Singletons", "modules\SoundInTheory.Piranha.ContentExtensions.Singletons\SoundInTheory.Piranha.ContentExtensions.Singletons.csproj", "{2726F1E4-5E60-4BB8-994A-537B9B295771}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{7B43ADF1-440C-4D64-BEC4-500DE47FA1A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentExtensionsExample", "ContentExtensionsExample\ContentExtensionsExample.csproj", "{5C51D806-08D5-4C40-8CC4-4381B9532A9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E9C8352-5336-4B12-88E1-6DA411965531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E9C8352-5336-4B12-88E1-6DA411965531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E9C8352-5336-4B12-88E1-6DA411965531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E9C8352-5336-4B12-88E1-6DA411965531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2726F1E4-5E60-4BB8-994A-537B9B295771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2726F1E4-5E60-4BB8-994A-537B9B295771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2726F1E4-5E60-4BB8-994A-537B9B295771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2726F1E4-5E60-4BB8-994A-537B9B295771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C51D806-08D5-4C40-8CC4-4381B9532A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C51D806-08D5-4C40-8CC4-4381B9532A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C51D806-08D5-4C40-8CC4-4381B9532A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C51D806-08D5-4C40-8CC4-4381B9532A9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2E9C8352-5336-4B12-88E1-6DA411965531} = {1A708DF9-28E0-4574-A893-B0198976C316}
+		{2726F1E4-5E60-4BB8-994A-537B9B295771} = {1A708DF9-28E0-4574-A893-B0198976C316}
+		{5C51D806-08D5-4C40-8CC4-4381B9532A9C} = {7B43ADF1-440C-4D64-BEC4-500DE47FA1A5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FCABB70-AF7F-448B-8881-A242EE0331A4}
+	EndGlobalSection
+EndGlobal

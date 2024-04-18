@@ -1,0 +1,18 @@
+﻿@using Microsoft.AspNetCore.Authorization;
+@using Piranha.Manager;
+@using SoundInTheory.Piranha.ContentExtensions.Areas.Services
+@using SoundInTheory.Piranha.ContentExtensions;
+
+@inject IAuthorizationService Auth
+@inject ManagerLocalizer Localizer
+
+@{
+    var typeId = Html.ViewContext.RouteData.Values.GetValueOrDefault("contentType", "").ToString();
+}
+
+@if (!ContentAreasModule.Instance.Types.ContainsId(typeId) && (await Auth.AuthorizeAsync(User, Permission.ContentDelete)).Succeeded)
+{
+    <button v-if="state !== 'new'" v-on:click.prevent="remove" class="btn btn-danger btn-icon" title="@Localizer.General["Delete"]">
+        <i class="fas fa-trash"></i>
+    </button>
+}
