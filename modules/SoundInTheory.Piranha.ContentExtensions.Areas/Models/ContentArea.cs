@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SoundInTheory.Piranha.ContentExtensions.Areas.Models
 {
-    [ContentGroup(Id = "ContentAreas", Title = "Areas", Icon = "fas fa-layer-group")]
+    [ContentGroup(Id = "ContentAreas", Title = "Content Areas", Icon = "fas fa-layer-group")]
     public abstract class ContentArea : GenericContent, IBlockContent
     {
         public IList<Block> Blocks { get; set; } = new List<Block>();
