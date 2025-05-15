@@ -50,7 +50,11 @@ namespace SoundInTheory.Piranha.ContentExtensions.Areas
 
                 if (areaType != null)
                 {
+                    contentType.UseBlocks = areaType.UseBlocks;
+      
                     _types[areaType.TypeId] = areaType;
+                    
+                    
                 }
             }
 
@@ -73,7 +77,8 @@ namespace SoundInTheory.Piranha.ContentExtensions.Areas
                 Description = attr.Description,
                 Icon = attr.Icon,
                 TypeId = contentType.Id,
-                CLRType = contentType.CLRType
+                CLRType = contentType.CLRType,
+                UseBlocks = attr.UseBlocks
             };
         }
     }

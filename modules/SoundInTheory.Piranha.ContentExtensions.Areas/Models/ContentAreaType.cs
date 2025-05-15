@@ -18,5 +18,7 @@ namespace SoundInTheory.Piranha.ContentExtensions.Areas.Models
         public string TypeId { get; set; }
 
         public string CLRType { get; set; }
+
+        public bool UseBlocks { get; set; } = true;
     }
 }

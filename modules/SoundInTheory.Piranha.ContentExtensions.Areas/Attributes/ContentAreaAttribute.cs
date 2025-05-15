@@ -25,6 +25,11 @@ namespace SoundInTheory.Piranha.ContentExtensions.Areas.Attributes
         public string Icon { get; set; }
 
         /// <summary>
+        /// Gets/sets the use block option
+        /// </summary>
+        public bool UseBlocks { get; set; } = true;
+
+        /// <summary>
         /// Default constructor.
         /// </summary>
         public ContentAreaAttribute() : base()
