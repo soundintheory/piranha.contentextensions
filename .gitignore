@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/ContentExtensionsExample/piranha.db
+/ContentExtensionsExample/piranha.db-shm
+/ContentExtensionsExample/piranha.db-wal
